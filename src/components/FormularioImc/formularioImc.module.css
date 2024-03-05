@@ -1,0 +1,33 @@
+.formulario {
+  text-transform: uppercase;
+  padding: 1rem 1.5rem;
+  background-color: #f44236;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  opacity: 0.9;
+  flex: 1;
+}
+
+.inputGroup {
+    display: flex;
+    flex-direction: column;
+}
+
+.label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.input {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.error {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
