@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
+import  { useState } from 'react';
 import FormularioImc from './components/FormularioImc';
 import ResultadoIMC from './components/ResultadoIMC';
-import RecomendacaoPeso from './components/RecomendacaoPeso';
 import styles from './App.module.css';
+import RecomendacaoPeso from './components/RecomendacaoPeso'
 
 
 function App  ()  {
@@ -29,9 +29,9 @@ function App  ()  {
    </header>
    <FormularioImc onAlturaChange={setAltura} onPesoChange={setPeso} onBlur={() => calcularIMC(altura, peso)} />
      {imc && <ResultadoIMC imc={imc} />}
-     {pesoIdeal && <OrientacaoPeso pesoIdeal={pesoIdeal} />}
+     {pesoIdeal && <RecomendacaoPeso pesoIdeal={pesoIdeal} />}
    </div>
   );
-};
+}
 
 export default App;
